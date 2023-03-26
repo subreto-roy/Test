@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% for product in object_list %}
+    <tr>
+        <td>{{ product.title }}</td>
+        <td>{{ product.sku }}</td>
+        <td>{{ product.description }}</td>
+        <td>{{ product.variant_count }}</td>
+    </tr>
+{% endfor %}
